@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "YggTorrent Ratio Helper",
+  "version": "1.0",
+  "description": "Displays the maximum amount you can download before your ratio drops below 1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.yggtorrent.org/*",
+        "*://*.yggtorrent.se/*",
+        "*://*.yggtorrent.gg/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ]
+}
